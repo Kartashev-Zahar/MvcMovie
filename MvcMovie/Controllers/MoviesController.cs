@@ -33,7 +33,7 @@ namespace MvcMovie.Controllers
                                             orderby m.Genre
                                             select m.Genre;
             var movies = from m in _context.Movie
-                         select m;
+                         select m;  
 
             if (!string.IsNullOrEmpty(searchString))
             {
